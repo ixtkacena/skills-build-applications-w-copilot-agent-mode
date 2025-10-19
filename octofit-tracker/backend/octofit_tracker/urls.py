@@ -30,5 +30,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', api_root, name='api_root'),
     # All REST API endpoints are available at /api/[component]/
+    # Example full codespace URL: https://$CODESPACE_NAME-8000.app.github.dev/api/activities/
     path('api/', include(router.urls)),
 ]
