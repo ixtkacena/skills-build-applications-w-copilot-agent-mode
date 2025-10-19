@@ -29,5 +29,6 @@ router.register(r'leaderboard', LeaderboardViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', api_root, name='api_root'),
+    # All REST API endpoints are available at /api/[component]/
     path('api/', include(router.urls)),
 ]
